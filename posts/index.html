@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Sito personale di Marco Bonifacio">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marco Bonifacio</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="it" href="../rss.xml">
+<link rel="canonical" href="https://marcobonifacio.github.io/posts/">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Vai al testo principale</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../">
+
+            <span id="blog-title">Marco Bonifacio</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item active">
+<a href="." class="nav-link">Blog <span class="sr-only">(attivo)</span></a>
+                </li>
+<li class="nav-item">
+<a href="../archive.html" class="nav-link">Archivio</a>
+                </li>
+<li class="nav-item">
+<a href="../categories/" class="nav-link">Tag</a>
+                </li>
+<li class="nav-item">
+<a href="../rss.xml" class="nav-link">Feed RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+
+    
+
+
+    
+<div class="postindex">
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="python-per-la-finanza/" class="u-url">Python per la finanza</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Marco Bonifacio
+            </span></p>
+            <p class="dateline">
+            <a href="python-per-la-finanza/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-05-03T17:35:12+02:00" itemprop="datePublished" title="2021-05-03">2021-05-03</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p><a class="reference external" href="https://www.python.org">Python</a> è per me diventato negli anni uno strumento indispensabile di lavoro, soprattutto quando i dati da gestire superano le capacità di Excel o per effettuare alcune analisi statistiche un po' più sofisticate del solito. Tuttavia, mi sono accorto che costruire un ambiente di lavoro efficace ed efficiente basato su Python non è sempre intuitivo, per cui proverò in questo post a condividere alcune delle cose che ho imparato nel tempo per giungere a una configurazione soddisfacente di questo importante strumento, soprattutto per chi lavora in ambito finanziario o ha comunque necessità di analizzare dei dati.</p>
+<p>La distribuzione di Python più interessante per chi lavora con i dati (o fa <em>data science</em>, come si dice adesso) è sicuramente <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda</a>, che però installa di <em>default</em> fin troppe librerie scientifiche per i miei gusti. Esiste una versione <em>minimal</em> di Anaconda, <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>, che installa solo l'interprete del linguaggio e un set minimo di librerie per il funzionamento del <em>package manager</em>, lasciando all'utente la possibilità di installare poi solo gli ulteriori pacchetti effettivamente necessari per ciascun progetto. Qui però iniziano le difficoltà. Se da un lato conda, rispetto a pip, il <em>package manager</em> ufficiale di Python, permette una gestione delle librerie più agevole, dall'altro il numnero di pacchetti disponibili è ben inferiore. Per fortuna, un'ampia <em>community</em> si è fatta carico di ampliare la disponibilità di librerie sotto conda attraverso il canale conda-forge. Mischiare però le distribuzioni "ufficiali" di Anaconda con quelle di conda-forge è sconsigliabile e nel tempo rischia di corrompere i vari ambienti di lavoro di Python. Per questo ho recentemente scoperto con soddifazione <a class="reference external" href="https://github.com/conda-forge/miniforge">Miniforge</a> un clone di Miniconda che scarica direttamente i pacchetti di Python dal canale della <em>community</em> di conda-forge <a class="footnote-reference brackets" href="python-per-la-finanza/#id2" id="id1">1</a>. Alla fine, quindi, sto usando con soddisfazione da alcuni mesi questa distribuzione, con <em>settings</em> identici tra i vari dispositivi che utilizzo in modo da avere ambienti di lavoro intercambiabili.</p>
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="python-per-la-finanza/#id1">1</a></span></dt>
+<dd>
+<p>Anche se in realtà lo stesso risultato si può ottenere in miniconda settando il canale conda-forge per primo.</p>
+</dd>
+</dl>
+</div>
+    </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2021         <a href="mailto:bonifacio.marco@gmail.com">Marco Bonifacio</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
