@@ -6,11 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Python per la finanza | Marco Bonifacio</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#df691a">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="it" href="../../rss.xml">
 <link rel="canonical" href="https://marcobonifacio.github.io/posts/python-per-la-finanza/">
-<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Marco Bonifacio">
+<link rel="icon" href="../../favicon.ico" sizes="16x16">
+<link rel="icon" href="../../icon_32x32.png" sizes="32x32">
+<link rel="icon" href="../../icon_96x96.png" sizes="96x96">
+<link rel="icon" href="../../icon_256x256.png" sizes="256x256">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<meta name="author" content="Marco Bonifacio">
 <meta property="og:site_name" content="Marco Bonifacio">
 <meta property="og:title" content="Python per la finanza">
 <meta property="og:url" content="https://marcobonifacio.github.io/posts/python-per-la-finanza/">
@@ -84,23 +91,30 @@ bg-dark
             <a href="." rel="bookmark">
             <time class="published dt-published" datetime="2021-05-03T17:35:12+02:00" itemprop="datePublished" title="2021-05-03 17:35">2021-05-03 17:35</time></a>
             </p>
+                <p class="commentline">
+        
+        <a href="#utterances-thread">Commenti</a>
+
+
             
 
-        </div>
+        </p>
+</div>
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
 <p><a class="reference external" href="https://www.python.org">Python</a> è per me diventato negli anni uno strumento indispensabile di lavoro, soprattutto quando i dati da gestire superano le capacità di Excel o per effettuare alcune analisi statistiche un po' più sofisticate del solito. Tuttavia, mi sono accorto che costruire un ambiente di lavoro efficace ed efficiente basato su Python non è sempre intuitivo, per cui proverò in questo post a condividere alcune delle cose che ho imparato nel tempo per giungere a una configurazione soddisfacente di questo importante strumento, soprattutto per chi lavora in ambito finanziario o ha comunque necessità di analizzare dei dati.</p>
-<p>La distribuzione di Python più interessante per chi lavora con i dati (o fa <em>data science</em>, come si dice adesso) è sicuramente <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda</a>, che però installa di <em>default</em> fin troppe librerie scientifiche per i miei gusti. Esiste una versione <em>minimal</em> di <code>Anaconda</code>, <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>, che installa solo l'interprete del linguaggio e un set minimo di librerie per il funzionamento del <em>package manager</em>, lasciando all'utente la possibilità di installare poi solo gli ulteriori pacchetti effettivamente necessari per ciascun progetto. Qui però iniziano le difficoltà. Se da un lato <code>conda</code>, rispetto a <code>pip</code>, il <em>package manager</em> ufficiale di Python, permette una gestione delle librerie più agevole, dall'altro il numnero di pacchetti disponibili è ben inferiore. Per fortuna, un'ampia <em>community</em> si è fatta carico di ampliare la disponibilità di librerie sotto <code>conda</code> attraverso il canale <code>conda-forge</code>. Mischiare però le distribuzioni "ufficiali" di Anaconda con quelle di <code>conda-forge</code> è sconsigliabile e nel tempo rischia di corrompere i vari ambienti di lavoro di Python. Per questo ho recentemente scoperto con soddifazione <a class="reference external" href="https://github.com/conda-forge/miniforge">miniforge</a> un clone di <code>miniconda</code> che scarica direttamente i pacchetti di Python dal canale della <em>community</em> di <code>conda-forge</code> <a class="footnote-reference brackets" href="#id3" id="id1">1</a>. Alla fine, quindi, sto usando con soddisfazione da alcuni mesi questa distribuzione, con <em>settings</em> identici tra i vari dispositivi che utilizzo in modo da avere ambienti di lavoro intercambiabili.</p>
+<!-- TEASER_END -->
+<p>La distribuzione di Python più interessante per chi lavora con i dati (o fa <em>data science</em>, come si dice adesso) è sicuramente <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda</a>, che però installa di <em>default</em> fin troppe librerie scientifiche per i miei gusti. Esiste una versione <em>minimal</em> di <code>Anaconda</code>, <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>, che installa solo l'interprete del linguaggio e un set minimo di librerie per il funzionamento del <em>package manager</em>, lasciando all'utente la possibilità di installare poi solo gli ulteriori pacchetti effettivamente necessari per ciascun progetto. Qui però iniziano le difficoltà. Se da un lato <code>conda</code>, rispetto a <code>pip</code>, il <em>package manager</em> ufficiale di Python, permette una gestione delle librerie più agevole, dall'altro il numnero di pacchetti disponibili è ben inferiore. Per fortuna, un'ampia <em>community</em> si è fatta carico di ampliare la disponibilità di librerie sotto <code>conda</code> attraverso il canale <code>conda-forge</code>. Mischiare però le distribuzioni "ufficiali" di Anaconda con quelle di <code>conda-forge</code> è sconsigliabile e nel tempo rischia di corrompere i vari ambienti di lavoro di Python. Per questo ho recentemente scoperto con soddifazione <a class="reference external" href="https://github.com/conda-forge/miniforge">miniforge</a>, un clone di <code>miniconda</code> che scarica direttamente i pacchetti di Python dal canale della <em>community</em> di <code>conda-forge</code> <a class="footnote-reference brackets" href="#id3" id="id1">1</a>. Alla fine, quindi, sto usando con soddisfazione da alcuni mesi questa distribuzione, con impostazioni identiche tra i vari dispositivi che utilizzo in modo da avere ambienti di lavoro intercambiabili.</p>
 <p>Passando alle librerie vere e proprie, la prima cosa da installare, secondo me, è la triade <a class="reference external" href="https://numpy.org/">numpy</a> - <a class="reference external" href="https://pandas.pydata.org/">pandas</a> - <a class="reference external" href="https://matplotlib.org/">matplotlib</a>. Altamente integrati tra loro, questi tre pacchetti soddisfano tutte le esigenze di analisi e visualizzazione dei dati, sostituendo più che degnamente gli enormi fogli Excel con centinaia di collegamenti che vanno velocemente fuori controllo. A questa configurazione base si possono poi aggiungere numerose altre librerie più specializzate, tra cui, ad esempio, <a class="reference external" href="https://www.scipy.org/">scipy</a> per le procedure di ottimizzazione o <a class="reference external" href="https://scikit-learn.org/stable/">scikit-learn</a> per classificazione e regressione (o - più pomposamente - per il <em>machine learning</em>).</p>
 <p>Tutto questo può essere gestito tramite un normale <em>editor</em> di testo o l'interprete interattivo di Python, ma è probabilmente più comodo fare le prime analisi di un progetto attraverso un <em>notebook</em>, un'applicazione <em>web</em> che consente di mescolare codice, risultati, visualizzazioni e testi in un unico documento. Qui entra in gioco <a class="reference external" href="https://jupyter.org/">jupyter</a>, progetto <em>open source</em> di <em>notebook</em> multi-linguaggio, che nell'ultima versione - <code>JupyterLab</code> - integra anche un terminale e vari <em>plugin</em> che lo rendono un vero e proprio ambiente <em>web</em> interattivo di sviluppo. Sebbene i <em>notebook</em>, estremamente versatili proprio per la capacità di integrare codice, testo e grafici in un unico documento, possano essere strumenti decisamente sofisticati in grado di generare un prodotto finito molto elegante, si prestano anche bene per le prime analisi esplorative e per costruire veloci prototipi di progetto, grazie all'immediatezza con cui in poche righe di codice si può caricare una tabella di dati, elaborarla e produrre qualche grafico a corredo.</p>
 <p>Il problema dei <em>notebook</em> è che si prestano a uno stile di <a class="reference external" href="https://it.wikipedia.org/wiki/Programmazione_imperativa">programmazione imperativo</a> che rischia di produrre documenti "pasticciati" in caso di progetti più complessi e strutturati. Per questi ultimi, sono però disponibili strumenti che permettono di creare con relativa facilità delle vere e proprie applicazioni <em>web</em> in cui risulta più semplice separare parametri e algoritmi e strutturare in modo più funzionale il codice. Tra questi strumenti, citerei in particolare <a class="reference external" href="https://streamlit.io/">Streamlit</a> che ho recentemente utilizzato per costruire una <em>dashboard</em> nella quale riunire tutti i <em>task</em> quotidiani in modo da avere un vero e proprio pannello di controllo delle attività ricorrenti nella mia giornata lavorativa. Quello che mi ha sorpreso di <code>Streamlit</code> è l'assoluta facilità con cui è stato possibile integrare elementi interattivi nel codice per costruire pagine <em>web</em> dinamiche; inoltre - ma questa è una caratteristica che condivide con molti altri pacchetti - come sia stato possibile costruire delle vere e proprie <em>web app</em> solo con Python <a class="footnote-reference brackets" href="#id4" id="id2">2</a>.</p>
-<p>Ecco, in sintesi questo è il mio ambiente di lavoro dietro lo schermo. Naturalmente, io sono un tipo curioso e ho provato molti altri strumenti in questi anni, prima di arrivare a una configurazione più o meno stabile che ho cercato qui di descrivere. E non è detto che non troverò qualcosa di interessante anche domani, per cui cambierò qualcosa e avrò una scusa per tornare a parlarne.</p>
+<p>Ecco, in sintesi questo è il mio ambiente di lavoro dietro lo schermo. Peraltro, io sono un tipo curioso e ho provato diversi strumenti in questi anni, prima di arrivare a una configurazione più o meno stabile che ho cercato qui di descrivere. E non è detto che non troverò qualcosa di interessante anche domani, per cui cambierò qualcosa e avrò una scusa per tornare a parlarne.</p>
 <dl class="footnote brackets">
 <dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd>
-<p>Anche se in realtà lo stesso risultato si può ottenere in miniconda settando il canale <code>conda-forge</code> per primo.</p>
+<p>Anche se in realtà lo stesso risultato si può ottenere in <code>miniconda</code> settando il canale <code>conda-forge</code> per primo.</p>
 </dd>
 <dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
 <dd>
@@ -117,13 +131,40 @@ bg-dark
             <li><a class="tag p-category" href="../../categories/pandas/" rel="tag">pandas</a></li>
             <li><a class="tag p-category" href="../../categories/python/" rel="tag">python</a></li>
             <li><a class="tag p-category" href="../../categories/streamlit/" rel="tag">streamlit</a></li>
-        </ul></nav></aside></article><!--End of body content--><footer id="footer">
-            Contents © 2021         <a href="mailto:bonifacio.marco@gmail.com">Marco Bonifacio</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+        </ul></nav></aside><section class="comments hidden-print"><h2>Commenti</h2>
+        
+        
+        <div data-title="Python per la finanza" id="utterances-thread"></div>
+        <script src="https://utteranc.es/client.js" repo="marcobonifacio/marcobonifacio.github.io" issue-term="title" theme="github-light" crossorigin="anonymous"></script></section></article><!--End of body content--><footer id="footer"><div>
+    <p>
+        <a href="https://twitter.com/mrcbnfc">
+            <i class="fa fa-twitter-square fa-2x"></i>
+        </a>
+        <a href="https://github.com/marcobonifacio">
+            <i class="fa fa-github-square fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/marcobonifacio">
+            <i class="fa fa-linkedin-square fa-2x"></i>
+        </a>
+        <a href="mailto:bonifacio.marco@gmail.com">
+            <i class="fa fa-envelope-square fa-2x"></i>
+        </a>
+    </p>
+    <p>
+        Contents © 2021 <a href="mailto:bonifacio.marco@gmail.com">Marco Bonifacio</a>
+        —
+        Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a><br></p>
+    <p>
+        
 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
-<img alt="Licenza Creative Commons BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br>
+<img alt="Licenza Creative Commons BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a>
+—
 Quest'opera è distribuita con Licenza 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
+
+    </p>
+</div>
 
             
             
