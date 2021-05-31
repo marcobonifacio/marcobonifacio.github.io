@@ -7,70 +7,78 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://marcobonifacio.github.io/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/archive.html</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/categories/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/categories/cat_programmazione/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/categories/conda/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/categories/finanza/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/categories/jupyter/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/categories/matplotlib/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/categories/numpy/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/categories/pandas/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://marcobonifacio.github.io/categories/pca/</loc>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/categories/python/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://marcobonifacio.github.io/categories/statistica/</loc>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/categories/streamlit/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/cheatsheet/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/posts/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/posts/analizzare-i-mercati-con-le-componenti-principali/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/posts/prezzi-e-rendimenti-con-pandas/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://marcobonifacio.github.io/posts/python-per-la-finanza/</loc>
-  <lastmod>2021-05-31T08:52:00Z</lastmod>
+  <lastmod>2021-05-31T12:38:00Z</lastmod>
  </url>
 </urlset>
