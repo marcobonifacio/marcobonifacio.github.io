@@ -1,4 +1,0 @@
-Sitemap: https://marcobonifacio.github.io/sitemapindex.xml
-
-User-Agent: *
-Host: marcobonifacio.github.io
