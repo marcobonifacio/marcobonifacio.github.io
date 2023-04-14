@@ -3,9 +3,23 @@
 }
 
 body {
-  float: left;
   background-color: slategray;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 100px;
+  overflow: scroll;
+  transform: translate(0, -50%)
+}
+
+.card {
+  height: 100%;
+  border: 5px solid black;
 }
 
 @media (max-width: 600px) {
